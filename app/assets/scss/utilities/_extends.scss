@@ -1,0 +1,72 @@
+/*
+Keep in mind these values are using in differents parts.
+If you want a custom style for one element, create a new one extending the
+styles that you want to modify.
+*/
+
+%reseter {
+    margin: 0;
+    padding: 0;
+}
+
+%font_default {
+    font-size: remCalc(20px);
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: remCalc(24px);
+}
+
+%font_default--body {
+    @extend %font_default;
+    font-family: $ysw-body-font;
+}
+
+%font_default--header {
+    @extend %font_default;
+    font-family: $ysw-headings-font;
+}
+
+%regular_price_style {
+    @extend %font_default--header;
+    color: $ysw-black-color;
+    font-size: remCalc(14px);
+    font-weight: 400;
+    line-height: remCalc(20px);
+}
+
+%font_product_properties {
+    @extend %reseter;
+    @extend %font_default--header;
+    color: $ysw-grey-color;
+    font-size: remCalc(13px);
+}
+
+%btn_actions--product_page {
+    @extend %font_default--header;
+    border: 0;
+    color: $ysw-white-color;
+    font-size: remCalc(16px);
+    font-weight: 700;
+    line-height: remCalc(17px);
+    text-align: center;
+}
+
+%sale-badge {
+    background-color: $wm-secundary-color;
+    border-radius: remCalc(3px);
+    display: block;
+    padding: remCalc(6px 15px);
+}
+
+
+%button-bg {
+    background-color: $wm-Primary-color;
+    border-color: remCalc(1px) solid $wm-Primary-color;
+    color: $wm-Three-color;
+
+    &:hover,
+    &:focus {
+        background-color: $wm-secundary-color;
+        border-color: $wm-Primary-color;
+    }
+}

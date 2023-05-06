@@ -1,0 +1,76 @@
+/*Colors*/
+
+// $ysw-primary-color: stencilColor("color-primary");
+// $ysw-primary-color--dark: stencilColor("color-primaryDark");
+// $ysw-primary-color--darker: stencilColor("color-primaryDarker");
+// $ysw-primary-color--light: stencilColor("color-primaryLight");
+// $ysw-primary-color--lighter: stencilColor("color-primaryLighter");
+
+// $ysw-secondary-color: stencilColor("color-secondary");
+// $ysw-secondary-color--dark: stencilColor("color-secondaryDark");
+// $ysw-secondary-color--darker: stencilColor("color-secondaryDarker");
+// $ysw-secondary-color--light: stencilColor("color-secondaryLight");
+// $ysw-secondary-color--lighter: stencilColor("color-secondaryLighter");
+
+/*OTHER COLORS*/
+
+
+
+/*Navigation Colors*/
+
+// $ysw-nav-pages-color: stencilColor("navPages-color");
+// $ysw-nav-pages-color--hover: stencilColor("navPages-color-hover");
+// $ysw-nav-pages-color--background: stencilColor("navPages-backgroundColor");
+// $ysw-nav-pages-color--submenu: stencilColor("navPages-subMenu-backgroundColor");
+// $ysw-nav-pages-color--submenu-sep: stencilColor("navPages-subMenu-separatorColor");
+
+// /*Text Colors*/
+
+// $ysw-text-base-color: stencilColor("color-textBase");
+// $ysw-text-base-color--hover: stencilColor("color-textBase--hover");
+// $ysw-text-base-color--active: stencilColor("color-textBase--active");
+
+// $ysw-text-secondary: stencilColor("color-textSecondary");
+// $ysw-text-secondary--hover: stencilColor("color-textSecondary--hover");
+// $ysw-text-secondary--active: stencilColor("color-textSecondary--active");
+
+// $ysw-text-link-color: stencilColor("color-textLink");
+// $ysw-text-link-color--hover: stencilColor("color-textLink--hover");
+// $ysw-text-link-color--active: stencilColor("color-textLink--active");
+
+// $ysw-text-heading-color: stencilColor("color-textHeading");
+
+/*Alert Colors*/
+
+// $ysw-alert-error-color: stencilColor("color-error");
+// $ysw-alert-error-colo--light: stencilColor("color-errorLight");
+// $ysw-alert-info-color: stencilColor("color-info");
+// $ysw-alert-info-color--light: stencilColor("color-infoLight");
+// $ysw-alert-success-color: stencilColor("color-success");
+// $ysw-alert-success-color--light: stencilColor("color-successLight");
+// $ysw-alert-warning-color: stencilColor("color-warning");
+// $ysw-alert-warning-color--light: stencilColor("color-warningLight");
+
+// /*Layout Colors*/
+
+// $ysw-body-background-color: stencilColor("body-bg");
+// $ysw-header-background-color: stencilColor("header-backgroundColor");
+// $ysw-footer-background-color: stencilColor("footer-backgroundColor");
+// $ysw-border-color: $ysw-grey-color--light;
+
+/* YSW Custom Colors*/
+$wsm-black-color: #000;
+$wsm-white-color: #fff;
+$wsm-green-color: green;
+$wsm-bs-blue: #0d6efd;
+$wsm-info: #36b9cc;
+
+$wsm-grey-color: var(--bs-gray);
+$wsm-grey-color--dark: var(--bs-gray-dark);
+$wsm-grey-color--darker: var(--bs-gray-700);
+$wsm-grey-color--darkest: var(--bs-gray-900);
+$wsm-grey-color--medium: var(--bs-gray-500);
+$wsm-grey-color--light: var(--bs-gray-100);
+$wsm-grey-color--lighter: var(--bs-gray-200);
+$wsm-grey-color--lightest: var(--bs-gray-300);
+$wsm-footer-gray--lishgt: var(--bs-gray-400);

@@ -1,0 +1,31 @@
+.footer {
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+            border-top:  1px solid #ccc;
+
+    .section {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 20px 0;
+    }
+
+    .description {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0;
+
+        p {
+            margin: 0;
+            font-size: small;
+        }
+
+        .title {
+            margin-bottom: 0;
+            font-size: larger;
+        }
+    }
+}

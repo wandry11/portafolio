@@ -1,0 +1,60 @@
+/*Font-Weight*/
+$wm-font-family-titleproducts: "Roboto Slab";
+$wm-marign-botton-standart: remCalc(50px);
+
+$ysw-border-color: #ccc;
+// $ysw-carousel-arrow-bgColor: rgba($wm-Primary-color, 0.884);
+
+/* Layouts */
+
+$ysw-header-nav-user-height: remCalc(30px);
+$ysw-header-height: remCalc(100px);
+
+$ysw-container-max-width: remCalc(1200px);
+$ysw-container-padding: remCalc(15px);
+
+$ysw-homepage-side-width: remCalc(235px);
+$ysw-homepage-side-margin: remCalc(25px);
+
+$ysw-product-side-width: remCalc(235px);
+$ysw-product-side-margin: remCalc(60px);
+
+$ysw-category-side-width: remCalc(235px);
+$ysw-category-side-margin: remCalc(60px);
+
+$ysw-header-nav-user-height: 30px;
+$ysw-product-galley-width: 560px;
+$ysw-product-galley-thumbs-width: 95px;
+
+/* Breakpoints*/
+/* Desktop Devices: huge, b-xxlarge, b-xlarge, large*/
+/* Mobile Devices: b-large, b-medium, medium, mobile*/
+/* Handheld Devices: b-small, small, handheld*/
+
+$breakpoint-subtract: 0.02px;
+
+$ysw-breakpoints: (
+    /* Stencil Screens*/
+    "small": 576px,
+    "medium": 1024px,
+    "large": 1200px,
+    /* Bootstrap Screens*/
+    "b-small": 577px,
+    "b-medium": 768px,
+    "b-large": 992px,
+    "b-xlarge": 1200px,
+    "b-xxlarge": 1400px,
+    /* Custom Screens In Real World*/
+    "handheld": 480px,
+    "b-view": 550px,
+    "medium-cus": 801px,
+    "custom-table": 960px,
+    "mobile": 1024px,
+    "huge": 1600px,
+
+    /* Custom Screens in Pages*/
+    "425": 425px,
+    "600": 600px,
+    "375": 375px
+
+) !default;

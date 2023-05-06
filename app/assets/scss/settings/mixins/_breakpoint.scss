@@ -1,0 +1,50 @@
+// Extend the mixin `breakpoint` from stencil to add
+// the bootrap breakpoints.
+@mixin ysw-breakpoint($breakpoint, $type: "min-width") {
+    @if map-has-key($ysw-breakpoints, $breakpoint) {
+        $media: map-get($ysw-breakpoints, $breakpoint);
+
+        @if $type == "max-width" {
+            $media: map-get($ysw-breakpoints, $breakpoint) -
+                $breakpoint-subtract;
+        }
+
+        @media (#{$type}: $media) {
+            @content;
+        }
+    } @else {
+        @warn "Missing value: `#{$breakpoint}`. Please check: #{map-keys($ysw-breakpoints)}.";
+    }
+}
+
+// Min screen devices.
+@mixin ysw-breakpoint-up($breakpoint) {
+    @if map-has-key($ysw-breakpoints, $breakpoint) {
+        @media (min-width: map-get($ysw-breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "Missing value: `#{$breakpoint}`. Please check: #{map-keys($ysw-breakpoints)}.";
+    }
+}
+
+// Max screen devices.
+@mixin ysw-breakpoint-down($breakpoint) {
+    @if map-has-key($ysw-breakpoints, $breakpoint) {
+        @media (max-width: map-get($ysw-breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "Missing value: `#{$breakpoint}`. Please check: #{map-keys($ysw-breakpoints)}.";
+    }
+}
+
+// Bwtween min and max screen devices.
+@mixin ysw-breakpoint-between($breakpoint-min, $breakpoint-max) {
+    $media-min: map-get($ysw-breakpoints, $breakpoint-min);
+    $media-max: map-get($ysw-breakpoints, $breakpoint-max);
+
+    @media (min-width: $media-min) and (max-width: $media-max) {
+        @content;
+    }
+}

@@ -1,0 +1,7 @@
+@use "sass:math";
+@function remCalc($font-size) {
+   $font: calc($font-size / (14px));
+   @return $font + rem;
+}
+
+//  @return round($font)+rem;

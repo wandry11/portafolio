@@ -1,0 +1,63 @@
+.navbar {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .item {
+        padding: 8px 20px;
+        margin: 0 10px;
+    }
+
+    .link {
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .logoTitle {
+        text-transform: uppercase;
+        color: black;
+        font-weight: 700;
+    }
+}
+
+.navbarMobile {
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    &__item {
+        padding: 8px 20px;
+        margin: 0 10px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    &__logoTitle {
+        text-transform: uppercase;
+        color: black;
+        font-weight: 700;
+    }
+}
+
+.offcanvas {
+    background-color: red;
+}
