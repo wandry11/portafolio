@@ -1,8 +1,11 @@
 .footer {
-    background: linear-gradient(to bottom,
-            transparent,
-            rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-            border-top:  1px solid #ccc;
+    // background: linear-gradient(to bottom,
+    //         transparent,
+    //         rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+    border-top: 1px solid #ccc;
+    // background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%) !important;
+    // background: linear-gradient(109.6deg, rgb(31, 50, 74) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background: linear-gradient(109.6deg, rgb(17, 37, 60) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
 
     .section {
         display: flex;
