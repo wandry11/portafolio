@@ -9,22 +9,47 @@
     }
 
     .item {
-        padding: 8px 20px;
+        // padding: 8px 20px;
         margin: 0 10px;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(17, 37, 60);
+
+            .link {
+                color: white;
+            }
+        }
     }
 
     .link {
         text-decoration: none;
         font-weight: 600;
-        color: black;
+        color: rgb(17, 37, 60);
         font-size: 16px;
         text-transform: uppercase;
+        padding: 8px 30px;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(17, 37, 60);
+            color: white;
+        }
+
+        &:focus {
+            padding: 8px 30px;
+        }
     }
 
     .logoTitle {
         text-transform: uppercase;
-        color: black;
+        color: rgb(17, 37, 60);
         font-weight: 700;
+    }
+
+    .active {
+        background-color: rgb(17, 37, 60);
+        color: white !important;
     }
 }
 
@@ -39,25 +64,49 @@
     }
 
     &__item {
-        padding: 8px 20px;
         margin: 0 10px;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(17, 37, 60);
+
+            .link {
+                color: white;
+            }
+        }
     }
 
     &__link {
         text-decoration: none;
         font-weight: 600;
-        color: black;
-        font-size: 16px;
+        color: rgb(17, 37, 60);
+        font-size: 12px;
         text-transform: uppercase;
+        padding: 8px 30px;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(17, 37, 60);
+            color: white;
+        }
+
+        &:focus {
+            padding: 8px 30px;
+        }
     }
 
-    &__logoTitle {
+    &__logoTitle.offcanvas-title {
         text-transform: uppercase;
-        color: black;
+        color: rgb(17, 37, 60);
         font-weight: 700;
     }
-}
 
-.offcanvas {
-    background-color: red;
+    &__subtitle {
+        font-size: 14px;
+    }
+
+    .active {
+        background-color: rgb(17, 37, 60);
+        color: white !important;
+    }
 }

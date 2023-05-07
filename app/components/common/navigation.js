@@ -8,6 +8,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Link from 'next/link';
 
 function Navigation() {
+    const [set, setActiveLink] = useState(false);
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -27,38 +28,40 @@ function Navigation() {
         }
     ]
 
+
+
     return (
         <Navbar bg="light" expand="md" className={styles.navbar}>
             <Container>
-                <Navbar.Brand href="#home" className={styles.logoTitle}>Wandry Martinez</Navbar.Brand>
+                <Navbar.Brand href="#home" className={styles.logoTitle}>Portafolio</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleShow} className='' />
                 <Navbar id="basic-navbar-nav" className='d-none d-md-inline-block'>
                     <Nav className="me-auto ">
                         <ul className={styles.nav}>
-                            {links.map(({ label, route }) => (
-                                <li key={route} className={styles.item}>
-                                    <Link href={route} aria-label={label + ' link'} className={styles.link}>
-                                        {label}
+                            {links.map((data) => (
+                                <li key={data.label} className={styles.item}>
+                                    <Link href={data.route} aria-label={data.label} className={set === data.label ? styles.link + ' active' : styles.link} onClick={((e) => setActiveLink(data.label))}>
+                                        {data.label}
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     </Nav>
                 </Navbar>
-                <Offcanvas show={show} onHide={handleClose}>
+                <Offcanvas show={show} onHide={handleClose} className={'navbarMobile'}>
                     <Offcanvas.Header closeButton>
                         <div className='offcanvas-container'>
-                            <Offcanvas.Title>Wandry Martinez</Offcanvas.Title>
-                            <span>Front-End Web Developer</span>
+                            <Offcanvas.Title className={'navbarMobile__logoTitle'}>Wandry Martinez</Offcanvas.Title>
+                            <span className='navbarMobile__subtitle'>Front-End Web Developer</span>
                         </div>
                     </Offcanvas.Header>
-                    <Offcanvas.Body className={'navbarMobile'} >
+                    <Offcanvas.Body className={'navbarMobile_body'} >
                         <Nav>
                             <ul className={'navbarMobile__list'}>
-                                {links.map(({ label, route }) => (
-                                    <li key={route} className={'navbarMobile__item'}>
-                                        <Link href={route} aria-label={label + ' link'} className={'navbarMobile__link'}>
-                                            {label}
+                                {links.map((data) => (
+                                    <li key={data.label} className={'navbarMobile__item'}>
+                                        <Link href={data.route} aria-label={data.label} className={set === data.label ? 'navbarMobile__link' + ' active' : 'navbarMobile__link'} onClick={((e) => setActiveLink(data.label))}>
+                                            {data.label}
                                         </Link>
                                     </li>
                                 ))}
