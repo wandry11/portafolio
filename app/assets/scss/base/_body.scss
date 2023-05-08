@@ -40,7 +40,7 @@
     --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     :root {
         --foreground-rgb: 255, 255, 255;
         --background-start-rgb: 0, 0, 0;
@@ -69,9 +69,9 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     html {
-        color-scheme: dark;
+        color-scheme: light;
     }
 }
 
@@ -82,10 +82,6 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: rgb(var(--foreground-rgb));
-    // background: linear-gradient(to bottom,
-    //         transparent,
-    //         rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)) !important;
-    // background: linear-gradient(109.6deg, rgb(31, 50, 74) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     background: linear-gradient(109.6deg, rgb(17, 37, 60) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%) !important;
 }
 

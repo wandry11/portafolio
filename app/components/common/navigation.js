@@ -28,8 +28,6 @@ function Navigation() {
         }
     ]
 
-
-
     return (
         <Navbar bg="light" expand="md" className={styles.navbar}>
             <Container>

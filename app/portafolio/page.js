@@ -1,8 +1,11 @@
+import Projects from "../components/projects";
 
 export default function Portafolio() {
     return (
         <main>
-            <h1>Portafolio</h1>
+            <section className={'projects'} id={'portafolio'}>
+                <Projects />
+            </section>
         </main>
     )
 }
