@@ -9,8 +9,8 @@
     }
 
     .item {
-        // padding: 8px 20px;
         margin: 0 10px;
+        border-radius: 10px;
 
         &:hover,
         &:focus {
@@ -29,14 +29,16 @@
         font-size: 16px;
         text-transform: uppercase;
         padding: 8px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
 
         &:hover,
         &:focus {
             background-color: rgb(17, 37, 60);
             color: white;
-        }
-
-        &:focus {
+            border-radius: 10px;
             padding: 8px 30px;
         }
     }
@@ -61,16 +63,21 @@
         margin: 0;
         padding: 0;
         align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     &__item {
         margin: 0 10px;
+        padding: 5px 0;
+        width: 100%;
 
         &:hover,
         &:focus {
             background-color: rgb(17, 37, 60);
+            color: white;
 
-            .link {
+            .link, a {
                 color: white;
             }
         }
@@ -83,6 +90,10 @@
         font-size: 12px;
         text-transform: uppercase;
         padding: 8px 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &:hover,
         &:focus {

@@ -133,16 +133,13 @@ ul li {
     outline: 0 !important;
 }
 
-.heading_g {
-    padding: 0 10px;
-    text-align: center;
-    margin-top: 20px;
-}
-
 // [tabindex="-1"]:focus:not(:focus-visible) {
 //     outline: 0 !important
 // }
 
-.navbar-toggler {
-    margin: 0 !important;
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }

@@ -10,11 +10,13 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -32,3 +34,60 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+Paginas Changes:
+
+Node V ->  v20.14.0
+
+Navigation -> Links
+Page -> Ids Sections To Links
+Banner Added Button
+Slider Tabs
+CardSlider
+FooterSection
+Social Icons
+
+npm install react-icons
+# Or for Font Awesome
+npm install @fortawesome/fontawesome-free @fortawesome/react-fontawesome
+npm install @mui/material
+
+
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons  
+npm install @fortawesome/pro-all-svg-icons
+
+
+#Navigation.module.scss
+
+
+
+---
+
+new:
+
+npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/fontawesome-svg-core
+
+
+ejemplo:
+
+// pages/modules/admin/access-token.tsx
+import React from 'react';
+import useAuth from '../../hooks/useAuth';
+
+const AccessToken = () => {
+  useAuth();
+  return <div>Access Token Page</div>;
+};
+
+export default AccessToken;
+
+
+// pages/unauthorized.tsx
+import React from 'react';
+
+const Unauthorized = () => {
+  return <div>No tienes permiso para acceder a esta página.</div>;
+};
+
+export default Unauthorized;

@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    // height: 100vh;
 
     &__container {
         height: 100%;
@@ -27,6 +27,17 @@
 
         p {
             color: white;
+        }
+
+        @include ysw-breakpoint-down("b-large") {
+            order: 0;
+            padding-left: 0;
+        }
+    }
+
+    &__content {
+        @include ysw-breakpoint-down("b-large") { /* Reemplazar @include ysw-breakpoint("medium-cus") */
+            order: 1;
         }
     }
 
@@ -66,4 +77,10 @@
     input:focus {
         border: 2px solid #CB8B07;
     }
+
+    .footer-icons__list,
+    .footer-list__heading {
+        justify-content: flex-start !important;
+        padding: 0 !important;
+    }   
 }
